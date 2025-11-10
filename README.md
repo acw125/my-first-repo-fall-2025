@@ -1,27 +1,55 @@
-# my-first-repo-fall-2025
-
-Learning and practicing version control!
-
-More content.
-
-Adding this content using the VS Code text editor (locally).
-
-## My first Repo!
-
-Learning and practicing version control!
+# my-first-repo-summer-2025
 
 ## Setup
 
-Clone the repo to download it from github. Perhaps on to the desktop.
+### Virtual Environment
 
-Navigate to the repo using the command line.
+Create and activate a virtual environment:
 
 ```sh
-cd ~/Desktop/my-first-repo-fall-2025
+conda create -n my-first-env-2025 python=3.11
+conda activate my-first-env-2025
+```
+
+### Packages
+
+Install packages:
+
+```sh
+# pip install pytest
+pip install -r requirements.txt
+```
+
+### Secret Credentials
+
+
+```sh
+# this is the ".env" file...
+
+# replace "demo" with your premium key:
+ALPHAVANTAGE_API_KEY="demo"
 ```
 
 ## Usage
 
+Play a game of rock, paper scissors:
 ```sh
-Python app/my_script.py
+# only works if this file does NOT import from other local py files:
+python app/rps.py
+# if this file imports from other local py files:
+python -m app.rps
+```
+
+Run the stocks dashboard:
+
+```sh
+python -m app.stocks
+```
+
+## Tests
+
+Run the tests:
+```sh
+# find all the tests and run them:
+pytest
 ```
