@@ -28,6 +28,7 @@ pip install -r requirements.txt
 
 # replace "demo" with your premium key:
 ALPHAVANTAGE_API_KEY="demo"
+FLASK_APP=web_app
 ```
 
 ## Usage
@@ -52,4 +53,14 @@ Run the tests:
 ```sh
 # find all the tests and run them:
 pytest
+```
+
+## Web App
+
+```sh
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
 ```
