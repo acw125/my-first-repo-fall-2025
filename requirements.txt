@@ -10,3 +10,6 @@ plotly
 
 # packages used for testing:
 pytest
+
+#Web app
+flask
