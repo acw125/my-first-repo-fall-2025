@@ -1,9 +1,10 @@
+
 # this is the "web_app/__init__.py" file...
 
 from flask import Flask
 
 from web_app.routes.home_routes import home_routes
-from web_app.routes.rps_routes import home_routes
+from web_app.routes.rps_routes import rps_routes
 #from web_app.routes.book_routes import book_routes
 #from web_app.routes.weather_routes import weather_routes
 

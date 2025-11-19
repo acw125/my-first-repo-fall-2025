@@ -34,6 +34,3 @@ def hello_world():
     #return message
     return render_template("hello.html", message=message, x=5, y=20)
 
-
-
-
