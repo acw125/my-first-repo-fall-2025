@@ -6,13 +6,13 @@
 
     <form action="/rps/results" method="POST">
         <label for="user_choice">Choose your move:</label>
-        <select name="user_choice">
+        <select name="user_choice" class="form-select" aria-label="Default select example">
             <option value="rock">Rock</option>
             <option value="paper">Paper</option>
             <option value="scissors">Scissors</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 {% endblock %}
