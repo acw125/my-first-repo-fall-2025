@@ -11,5 +11,8 @@ plotly
 # packages used for testing:
 pytest
 
-#Web app
+#Web app:
 flask
+
+# production server:
+gunicorn
